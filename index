@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natterjack</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+      <style>
+    .item1 { grid-area: header; }
+    .item2 { grid-area: menu; }
+    .item3 {grid-area: main; }
+    .item4 { grid-area: footer; }
+    .grid-container {
+      display: grid;
+      grid-template:
+        'header header header header header'
+        'menu main main main main'
+        'footer footer footer footer footer';
+      grid-gap: 20px;
+      padding: 20px;
+    }
+    </style>
+  </head>
+  <body>
+  <div class="grid-container">
+      <div class="item1">
+        <h1>Joel Carpenter</h1>
+        <h3>Librarian and metadata enthusiast.</h3>
+      </div>
+      <div class="item2">
+        <p><a href=../index.html>Home</a></p>
+        <p><a href=noxcore>Nox Core</a></p>
+        <p>SQL (in development)</p>
+      </div>
+      <div class="item3">
+        <h2>Welcome! Check out the sidebar on the left to explore my work experience and projects.</h2>
+        <p>I'm a librarian with a passion for metadata, data management, and coding. I have experience in SQL, as well as metadata encoding schemas such as EAD, CDWA Lite, Dublin Core, and VRA Core. I also do HTML and CSS on the side!</p>
+        <p>This website is hand-coded! The content and layout are currently under development, with new things coming soon. The main project hosted currently is Nox Core, a metadata schema / application profile for video game consoles.</p>
+      </div>
+      <div class="item4">
+        <h3>Contact:</h3>
+        <p>joelcarpenter.lis@proton.me<p>
+      </div>
+    </div>
+  </body>
+</html>
+-->
