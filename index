@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natterjack</title>
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-      <style>
+    <style>
     .item1 { grid-area: header; }
     .item2 { grid-area: menu; }
-    .item3 {grid-area: main; }
-    .item4 { grid-area: footer; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: photo; }
+    .item5 { grid-area: footer; }
     .grid-container {
       display: grid;
       grid-template:
         'header header header header header'
-        'menu main main main main'
+        'menu main main main photo'
         'footer footer footer footer footer';
-      grid-gap: 20px;
+      grid-gap: 45px;
       padding: 20px;
     }
     </style>
+    <script src="https://unpkg.com/jquery"></script>
+    <script> 
+      $(document).ready(function(){
+        $("#item2").load("/html/item2.txt");
+      });
+    </script>
   </head>
   <body>
   <div class="grid-container">
@@ -27,21 +34,20 @@
         <h1>Joel Carpenter</h1>
         <h3>Librarian and metadata enthusiast.</h3>
       </div>
-      <div class="item2">
-        <p><a href=../index.html>Home</a></p>
-        <p><a href=noxcore>Nox Core</a></p>
-        <p>SQL (in development)</p>
-      </div>
+      <div id="item2" class="item2"></div>
       <div class="item3">
         <h2>Welcome! Check out the sidebar on the left to explore my work experience and projects.</h2>
         <p>I'm a librarian with a passion for metadata, data management, and coding. I have experience in SQL, as well as metadata encoding schemas such as EAD, CDWA Lite, Dublin Core, and VRA Core. I also do HTML and CSS on the side!</p>
         <p>This website is hand-coded! The content and layout are currently under development, with new things coming soon. The main project hosted currently is Nox Core, a metadata schema / application profile for video game consoles.</p>
       </div>
       <div class="item4">
+        <img src="https://natterjack.neocities.org/jcarpenter_homepagephoto.jpg" width="100%" alt="img" />
+      </div>
+      <div class="item5">
+        <hr>
         <h3>Contact:</h3>
         <p>joelcarpenter.lis@proton.me<p>
       </div>
     </div>
   </body>
 </html>
--->
